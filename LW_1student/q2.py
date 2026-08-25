@@ -19,7 +19,7 @@ C = int(C)
 # Create the required variables here.
 points_per_question = T / 10
 score = points_per_question * C
-print(C)
+print(int(C))
 
 # -----------------------------------------
 # COMPUTATIONAL LOGIC AND OUTPUT
