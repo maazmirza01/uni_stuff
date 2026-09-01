@@ -5,15 +5,15 @@
 # |     Input      |   Output   |
 # |       A        |            |
 # +----------------+------------+
-# |       14       |            |
-# |       21       |            |
-# |       63       |            |
+# |       14       |   Alice       |
+# |       21       |    Charlie    |
+# |       63       |     Bob       |
 # +----------------+------------+
 
 # -----------------------------------------
 # VARIABLES
 # -----------------------------------------
-A = 7
+A = int(input())
 
 # -----------------------------------------
 # DEBUGGING TASK
@@ -23,9 +23,9 @@ A = 7
 # identify the logical errors,
 # and correct the code so that it produces the expected outputs.
 
-if (A % 2 != 0) and (A % 7 == 0):
+if (A % 2 == 0) and (A % 7 == 0):
     print("Alice")
-elif (A % 2 != 0) or (A % 9 == 0):
+elif (A % 2 != 0) and (A % 9 == 0):
     print("Bob")
 else:
     print("Charlie")

@@ -5,9 +5,9 @@
 # |     Input      |   Output   |
 # |       g        |            |
 # +----------------+------------+
-# |       29       |            |
-# |       78       |            |
-# |       51       |            |
+# |       29       |     29       |
+# |       78       |     80       |
+# |       51       |      50      |
 # +----------------+------------+
 
 # -----------------------------------------
@@ -15,12 +15,20 @@
 # -----------------------------------------
 # Create the required variable here.
 
-
+g = int(input())
 # -----------------------------------------
 # COMPUTATIONAL LOGIC AND OUTPUT
 # -----------------------------------------
 # Write your computational logic and print statement below.
 
+if g >= 38:
+    remainder = g % 5
+
+    if remainder >= 3:
+        g = g - remainder + 5
+    
+
+print(g)
 
 # -----------------------------------------
 # TEST YOUR PROGRAM
