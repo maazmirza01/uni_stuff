@@ -2,6 +2,12 @@
 # DEFINE THE REQUIRED FUNCTION(S)
 # -----------------------------------------
 # Write your function definition below.
+def format_name(name, order_hour):
+    if order_hour > 19:
+        name = name.upper()
+    else:
+        name = name.lower()
+    print(name)
 
 
 
@@ -9,6 +15,8 @@
 # INPUT
 # -----------------------------------------
 # Read the required input values below.
+name = input("Write your name: ")
+order_hour = int(input("Order hour: "))
 
 
 
@@ -17,7 +25,7 @@
 # -----------------------------------------
 # Call the function. The function itself prints the required output.
 
-
+format_name(name, order_hour)
 
 # -----------------------------------------
 # TEST YOUR PROGRAM
