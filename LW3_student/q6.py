@@ -4,22 +4,22 @@
 # Write your function definition(s) below.
 def fahrenheit_to_celsius(fahrenheit_temp):
     C = (fahrenheit_temp - 32) * (5/9)
-    C = round(C, 2)
     return C
 
 def celsius_to_fahrenheit(celsius_temp):
     F = (celsius_temp * (9/5)) + 32
-    F = round(F, 2)
     return F
 
 
 def temp_converter(temperature, target_scale):
     if target_scale == "F":
         F = celsius_to_fahrenheit(temperature)
+        F = round(F, 2)
         print(f"{F} degrees Fahrenheit is the temperature for Sana.")
     
     elif target_scale == "C":
         C = fahrenheit_to_celsius(temperature)
+        C = round(C, 2)
         print(f"{C} degrees celsius is the temperature for Fatima.")
 
 
