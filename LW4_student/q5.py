@@ -4,7 +4,19 @@
 
 def reverse_number(locker_number):
     # WRITE YOUR CODE HERE
-    pass
+    reverse = 0
+    while True:
+        quotient = locker_number // 10
+        remainder = locker_number % 10
+        reverse = reverse + remainder
+        locker_number = quotient 
+        if quotient == 0:
+            break
+        else: 
+            reverse = reverse * 10
+    return reverse
+
+
 
 
 # -----------------------------------------#

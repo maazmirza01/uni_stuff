@@ -4,7 +4,17 @@
 
 def collatz_sequence(starting_number):
     # WRITE YOUR CODE HERE
-    pass
+    current_number = starting_number
+    while True:
+        if current_number == 1 or current_number == 5 or current_number == 17:
+            break
+        else:    
+            print(current_number, end=", ")
+            if current_number % 2 == 0:
+                current_number = current_number // 2
+            else:
+                current_number = 3 * current_number - 1
+    print(current_number)
 
 
 # -----------------------------------------#

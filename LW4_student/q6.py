@@ -2,10 +2,29 @@
 # FUNCTION DEFINITIONS                     #
 # -----------------------------------------#
 # Write the required function(s) below.
+def area_calculator(board_length, board_width):
+    return board_length * board_width
 
 def best_choice(board_count, weight_limit):
     # WRITE YOUR CODE HERE
-    pass
+    area_choice = 0
+    for board in range(board_count):
+        board_length = int(input())
+        board_width = int(input())
+        board_weight =int(input())
+        if board_weight <= weight_limit:
+            area = area_calculator(board_length, board_width)
+            if area > area_choice:
+                area_choice = area
+        else:
+            continue
+    if area_choice == 0:
+        print("No Board")
+    else:
+        print(area_choice)
+
+
+
 
 
 # -----------------------------------------#
@@ -22,7 +41,7 @@ if __name__ == "__main__":
 
     # Note: Inputs to be entered are labelled as [ Input -> X ] where X is the input.
 
-    best_choice(3, 6)
+    #best_choice(3, 6)
     # [ Input -> 3]
     # [ Input -> 4]
     # [ Input -> 4]

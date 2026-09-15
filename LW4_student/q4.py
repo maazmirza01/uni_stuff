@@ -4,7 +4,20 @@
 
 def word_mood(word):
     # WRITE YOUR CODE HERE
-    pass
+    count = 0
+    mood = False
+    for letter in word:
+        if letter in "aeiou":
+            count += 1
+        else:
+            count = 0
+        if count == 3:
+            mood = True
+            break
+    if mood:
+        return "Happy"
+    else:
+        return "Sad"
 
 
 # -----------------------------------------#

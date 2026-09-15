@@ -4,8 +4,12 @@
 
 def countdown(starting_floor, ending_floor):
     # WRITE YOUR CODE HERE
-    pass
-
+    if type(starting_floor) == int and type(ending_floor) == int:
+        for i in range(starting_floor, ending_floor, -1):
+            print(i, end=", " )
+        print(ending_floor)
+    else:
+        print("Error: bad argument. countdown is defined for integers only.")
 
 # -----------------------------------------#
 # TESTING YOUR CODE                        #

@@ -4,7 +4,17 @@
 
 def max_equal_guests(juice_boxes, snack_bars):
     # WRITE YOUR CODE HERE
-    pass
+    guests = 1
+    if juice_boxes > snack_bars:
+        ending_count = snack_bars
+    else: 
+        ending_count = juice_boxes
+    for c in range(2, ending_count + 1):
+        if juice_boxes % c == 0 and snack_bars % c == 0:
+            guests = c
+    return guests
+
+
 
 
 # -----------------------------------------#
