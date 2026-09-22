@@ -9,9 +9,12 @@ def potion_doses(hurdle_count, max_jump_height):
         hurdle = int(input())
         if hurdle > highest:
             highest = hurdle
+    
     count = highest - max_jump_height
-        
-    return count
+    if count > 0:
+        return count
+    else:
+        return 0
         
 
 
@@ -29,7 +32,7 @@ if __name__ == "__main__":
 
     # Note: Inputs to be entered are labelled as [ Input -> X ] where X is the input.
 
-    #print(potion_doses(4, 3))
+    print(potion_doses(4, 3))
     # [ Input -> 1]
     # [ Input -> 2]
     # [ Input -> 3]
