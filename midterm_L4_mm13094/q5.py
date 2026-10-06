@@ -26,11 +26,11 @@ def ingredient_value(name):
 
 def ingredient_score(name, quantity):
     base_value = ingredient_value(name)
-    score = base_value + quantity
+    score = base_value * quantity
     if quantity > 5:
         score = score + 10
     if is_prime(quantity):
-        score = score + score * 1.5
+        score = score * 1.5
     return score
 
 def total_ingredients_score(name1, quantity1, name2, quantity2):
